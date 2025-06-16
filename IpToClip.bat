@@ -1,9 +1,9 @@
 @echo off
 
-for /f "tokens=4" %%a in (' route print ^| findstr 0.0.0.0.*0.0.0.0 ^| findstr /v "默认" ') do (set IP=%%a)
+for /f "tokens=4" %%a in (' route print ^| findstr 0.0.0.0.*0.0.0.0 ^| findstr /v "榛樿" ') do (set IP=%%a)
 
-echo 你的局域网IP是： %IP%
+echo 浣犵殑灞�鍩熺綉IP鏄細 %IP%
 
 echo %IP% | clip
 
-timeout /t 3
+timeout /t 3pause
